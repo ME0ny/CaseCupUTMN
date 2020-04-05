@@ -13,10 +13,11 @@ header
     background-color: rgb(62,62,66) ;
 }
 
-h1,h3,p
+h1,h2,h3,p
 {
     color: white;
     margin: 0;
+    margin-left: 10px;
     font-family: 'Montserrat', 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -107,5 +108,197 @@ h1,h3,p
 {
     background-color: rgb(74,74,78);
     border-radius: 30px;
+    line-height: 2.5em;
+    width: 80%;
+    height: 200px;
+}
+.card p
+{
+    margin-left: 20px;
 }
 
+#left
+{
+    position: relative;
+    margin-top: 13vh;
+    margin-left: 10vh;
+    width: 22%;
+    float: left;
+}
+#midle {
+  color: white;
+    margin: 0;
+    font-family: 'Montserrat', 'Roboto';
+  
+}
+
+#orthography1 {
+    margin-top: 2vh;
+    margin-right: 1vh;
+    float: left;
+    width: 48.5%;
+    height: 100px;
+    background-color: rgb(74,74,78);
+    border-radius: 30px;
+}
+#orthography1 p
+{
+   margin-left: 30px;
+}
+#orthography1 h2
+{
+    float: left;
+}
+
+#stopwords1 {
+  margin-top: 2vh;
+    margin-right: 0vh;
+    float: right;
+    width: 48.5%;
+    height: 100px;
+    background-color: rgb(74,74,78);
+    border-radius: 30px;
+}
+#stopwords1 h2
+{
+    float: left;
+}
+#stopwords1 p
+{
+    margin-left: 10px;
+}
+
+#answers1 
+{
+    margin-top: 2vh;
+    margin-right: 0vh;
+    float: right;
+   width: 100%;
+    height: 370px;
+    cursor: pointer;
+    background-color: rgb(74,74,78);
+    border-radius: 30px;
+}
+#answers1 .star
+{
+    margin-top: -15px;
+}
+
+
+#column1 {
+    margin-top: 1vh;
+    margin-right: 0vh;
+    float: left;
+    width: 50%;
+    height: 300px;
+    cursor: pointer;
+     background-color: rgb(74,74,78);
+    
+}
+ #column2 {
+  margin-top: 1vh;
+    margin-right: 0vh;
+    float: right;
+   width: 50%;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 0 0 30px 30px;
+ background-color: RGB(93,93,97);
+   
+  
+}
+ 
+#equals {
+    margin-top: 2vh;
+    margin-right: 0vh;
+    float: left;
+    width: 100%;
+    height: 320px;
+    cursor: pointer;
+    background-color: rgb(74,74,78);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 3em;
+}
+#equals .star
+{
+    margin-top: -38px;
+}
+
+#column3_1 {
+  margin-top: -2.4vh;
+    margin-left: 0vh;
+    float: left;
+    width: 4%;
+    height: 230px;
+    cursor: pointer;
+    border-radius: 30px;
+     background-color: RGB(93,93,97);
+     
+}
+
+#column3_2 {
+    margin-top: -2vh;
+    margin-left: 1vh;
+    float: left;
+    width: 29%;
+    height: 230px;
+    cursor: pointer;
+     background-color: rgb(74,74,78);
+     z-index: 7;
+    position: relative;
+
+
+    }
+
+#column3_3 {
+    margin-top: -2vh;
+    margin-left: 2vh;
+    float: left;
+    width: 30%;
+    height: 230px;
+    cursor: pointer;
+    border-radius: 0 0 30px 30px;
+     background-color: rgb(93,93,97);
+     z-index: 8;
+     position: relative;
+
+    }
+
+#column3_4 {
+  margin-top: -2vh;
+    margin-right: 1vh;
+    float: right;
+    width: 25%;
+    height: 230px;
+    cursor: pointer;
+     background-color: rgb(74,74,78);
+    z-index: 9;
+
+}
+
+#names
+{
+    position: relative;
+    padding-left: 7px;
+    line-height: 0.4em;
+    text-align: justify;
+    background-color: rgb(93,93,97);
+    border-radius: 30px;
+    z-index: 10;
+    white-space: pre-wrap;
+}
+.star
+{
+    margin-top: 0.5vh;
+    margin-left: 30px;
+    float: right;
+    line-height: 1.1em;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    background-color: rgb(44,43,48) ;
+    border-radius: 30px;
+    float: right;
+}
