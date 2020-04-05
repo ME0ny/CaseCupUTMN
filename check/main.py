@@ -61,7 +61,7 @@ def main(ticket):
         if badwordValue[0]==1:
             weightBad*=1
         else:
-            weightBad = badwordValue[0]
+            weightBad*= badwordValue[0]
             badwordArray.append(badwordValue[1])
 
     valueSub = (subjects.overlaps(question,answersFirst)/100)*weightSub #Подсчет баллов за уместность ответа на вопрос (0 - 0.8)
