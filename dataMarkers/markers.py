@@ -1,7 +1,7 @@
 f = open('data.txt','r',encoding='utf-8', newline='')
 data = []
 for i in range(54):
-    data.append(open(str(i)+'.txt','w',encoding='utf-8', newline=''))
+    data.append(open(str(i)+'.csv','w',encoding='utf-8', newline=''))
 
 for line in f:
     try:
