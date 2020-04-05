@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),                            #   панель администартора
-    path('', views.main, name="main"),
+    path('', views.main, name="main"),                          #   рендер страницы со статистикой
 ]

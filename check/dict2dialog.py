@@ -1,5 +1,9 @@
 from tag import d
 
+'''
+    Работа с токенами
+    поиск фраз
+'''
 def dialog():
     client = []
     operator = []

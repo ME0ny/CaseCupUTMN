@@ -6,10 +6,10 @@
 # coding: utf-8
 from spellcheck import find_misspells # Подклюсение функции проверки орфографии
 import badword,subjects       # Подключение функций: проверка нецензурной лексики, проверка уместности ответа
-from txt2dict import convert
-from tag import d
-from dict2dialog import dialog
-from nlp import recognition
+from txt2dict import convert #преобразование тикетов в формат для работы с python
+from tag import d   #импортирование словаря с данными
+from dict2dialog import dialog  #преобразование данных в формат для работы с функией
+from nlp import recognition #распознование класса текста
 
 #Функция нормализации данных. Данные нормализуются в значения от 0 до 1
 def norm(allLen,mis): 
@@ -66,6 +66,10 @@ def main(ticket):
 
     valueSub = (subjects.overlaps(question,answersFirst)/100)*weightSub #Подсчет баллов за уместность ответа на вопрос (0 - 0.8)
 
+    '''
+        Проверка:
+            совпадает ли ответ по тематике с вопросом
+    '''
     client_labels = []
     operator_labels = []
     valueNLP = 0

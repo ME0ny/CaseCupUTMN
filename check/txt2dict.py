@@ -1,5 +1,7 @@
 # -*- coding: utf8 -*-
-
+'''
+    Конвертируем данные
+'''
 def convert(ticket):
     symbol = 0
     flag = False
