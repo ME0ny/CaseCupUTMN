@@ -1,9 +1,9 @@
-from tag import d
+from tag import d,d2
 
 def dialog():
-    ans = {}
+    ans = ''
     for i in d:
         for j in i['messages']:
             if('text' in j):
-                ans[j['_id']]=j['text']
+                ans+=j['_id']+';'+j['text']+';\n'
     return ans
