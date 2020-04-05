@@ -1,12 +1,11 @@
-# -*- coding: utf8 -*-
-
-def convert(ticket):
-    symbol = 0
-    flag = False
-    s = ''
-    g = open('tag.py','w',encoding='utf-8', newline='')
-    g.write('d = [')
-    for j in ticket:
+f = open('tickets',encoding='utf-8', newline='')
+symbol = 0
+flag = False
+s = ''
+g = open('tag.py','w',encoding='utf-8', newline='')
+g.write('d = [')
+for i in f:
+    for j in i:
         if(j == '{'):
             flag = True
             symbol+=1
@@ -18,5 +17,6 @@ def convert(ticket):
             s+=','
             g.write(s)
             s = ''
-    g.write('0]\n')
-    g.close()
+g.write('0]\n')
+g.close()
+f.close()

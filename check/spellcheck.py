@@ -25,11 +25,12 @@ def find_misspells(text):
     #Подсчет количества ошибок
     misspells_qty = len(misspells)
     fin_text = ''
-
+    uncorrect = ''
     #Сохранение текста без ошибок для дальнейшей работы
     for word in formalized_splitted_text:
         if word in misspells:
             fin_text+=spell.correction(word)+' '
+            uncorrect+=word+' '
         else:
             fin_text+=word+' '
 
@@ -37,7 +38,8 @@ def find_misspells(text):
     return [
         fin_text, #измененного текста, только правильно написанные слова
         words_qty,#количество слов в сообщение 
-        misspells_qty#количество допущенных ошибок
+        misspells_qty,#количество допущенных ошибок
+        uncorrect
     ]
 
 

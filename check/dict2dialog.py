@@ -1,9 +1,13 @@
-from tag import d,d2
+from tag import d
 
 def dialog():
-    ans = ''
+    client = []
+    operator = []
     for i in d:
         for j in i['messages']:
             if('text' in j):
-                ans+=j['_id']+';'+j['text']+';\n'
-    return ans
+                if(len(j['_id'])<=6):
+                    client.append(j['text'])
+                else:
+                    operator.append(j['text'])
+    return [client,operator]
