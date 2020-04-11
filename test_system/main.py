@@ -59,7 +59,7 @@ def main(data):
 
     valueSub = (subjects.overlaps(question,answersFirst)/100)*weightSub #Подсчет баллов за уместность ответа на вопрос (0 - 0.8)
 
-    return ['Программа оценивает работу менеджера на ' + str(float('{:.2f}'.format(((valueSpell+valueSub)*weightBad*5)))), r[4],weightNLP,badwordArray,client,operator] #вывод оценки
+    return ['Программа оценивает работу менеджера на ' + str(float('{:.2f}'.format(((valueSpell+valueSub)*weightBad*5)))), r[4],badwordArray,client,operator] #вывод оценки
 data = ['Хочу купить билет по скидке. А есть субсидии для студентов? Москва Владивосток','Мы не летаем в этом направлении!']
 print(main(data))
     #формула оценки 
